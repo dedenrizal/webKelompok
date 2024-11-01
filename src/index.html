@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Modal Example</title>
+    <link href="../dist/styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header class="w-full flex p-2 border border-b-black">
+      <h1 class="flex-1 px-4 py-2">
+        Space<span class="bg-black text-white p-1">-y</span>
+      </h1>
+      <div class="flex-1">
+        <ul class="flex gap-4">
+          <li class="hover:underline px-4 py-2"><a href="#">home</a></li>
+          <li class="hover:underline px-4 py-2"><a href="#">about</a></li>
+          <li class="hover:underline px-4 py-2"><a href="#">contact</a></li>
+          <li class="hover:underline px-4 py-2"><a href="#">product</a></li>
+        </ul>
+      </div>
+      <div class="w-full flex-1">
+        <div class="flex justify-end">
+          <button
+            id="openModalBtn"
+            class="px-4 py-2 bg-black text-white rounded flex-none hover:bg-gray-500"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+      <!--start kogin pop up -->
+      <div
+        id="loginModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
+      >
+        <div class="bg-white p-8 rounded shadow-lg w-96">
+          <button id="closeModalBtn" class="text-sm font-bold flex justify-end">
+            &laquo; back
+          </button>
+          <h1 class="text-2xl font-bold text-gray-800 mb-4">
+            Welcome to Space<span class="bg-black text-white p-1">-y</span>
+          </h1>
+          <form>
+            <div class="mb-4">
+              <label for="username" class="block text-gray-700">Username</label>
+              <input
+                type="text"
+                id="username"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="password" class="block text-gray-700">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded"
+              />
+            </div>
+            <button
+              type="submit"
+              class="w-full py-2 bg-black text-white rounded hover:bg-gray-700"
+            >
+              Login
+            </button>
+          </form>
+
+          <h3 class="mt-3">
+            dont have any acount?<a
+              class="text-black hover:underline"
+              href="register.html"
+              >&nbsp;create account</a
+            >
+          <h3 class="mt-3">
+            masuk <a
+              class="text-black hover:underline"
+              href="dash.html"
+              >&nbsp;pake orang dalam&raquo;</a
+            >
+          </h3>
+        </div>
+      </div>
+      <!-- end login pop up -->
+    </header>
+    <main class="container mx-auto p-8">
+      <section class="text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">
+          Welcome to Space<span class="bg-black text-white p-1">-y</span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-8">
+          Discover amazing content and join our community.
+        </p>
+        <div class="flex justify-center space-x-4">
+          <a
+            href="#"
+            class="px-4 py-2 bg-black text-white rounded hover:bg-white hover:text-black border border-black transition duration-900"
+            >Learn More</a
+          >
+          <a
+            href="#"
+            class="px-4 py-2 bg-white text-black border border-gray-800 rounded hover:bg-black hover:text-white transition duration-200"
+            >Get Started</a
+          >
+        </div>
+      </section>
+
+      <section
+        class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <div
+          class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-200"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Feature 1</h2>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-200"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Feature 2</h2>
+          <p class="text-gray-600">
+            Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis
+            sem.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded shadow hover:shadow-lg transition duration-200"
+        >
+          <h2 class="text-xl font-bold text-gray-800 mb-2">Feature 3</h2>
+          <p class="text-gray-600">
+            Nibh. Sed ante. Vivamus turpis. Suspendisse pulvinar, augue ac
+            venenatis.
+          </p>
+        </div>
+      </section>
+      <div class="flex gap-5 mt-10">
+        <div class="flex-1">
+          <h1 class="flex text-xl font-bold justify-center mb-6">Blog Desc</h1>
+          <p class="flex text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            voluptatum natus. Reiciendis veritatis quaerat velit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Praesentium, mollitia
+            accusantium itaque ipsa architecto quos incidunt reiciendis earum
+            numquam, aut facere culpa officia suscipit magni? Beatae a
+            consequatur praesentium itaque?
+          </p>
+        </div>
+        <img
+          class="flex-1 w-32 h-auto"
+          src="https://th.bing.com/th/id/OIP.2AV-n8xzpmGUGzRKsRfWiAHaE8?w=259&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+          alt="Description of Image"
+        />
+      </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between">
+          <div>
+            <h3 class="text-lg font-bold mb-2">Company</h3>
+            <ul>
+              <li><a href="#" class="hover:underline">About Us</a></li>
+              <li><a href="#" class="hover:underline">Careers</a></li>
+              <li><a href="#" class="hover:underline">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-2">Support</h3>
+            <ul>
+              <li><a href="#" class="hover:underline">Contact Us</a></li>
+              <li><a href="#" class="hover:underline">FAQs</a></li>
+              <li><a href="#" class="hover:underline">Help Center</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-2">Follow Us</h3>
+            <ul class="flex space-x-4">
+              <li><a href="#" class="hover:underline">Facebook</a></li>
+              <li><a href="#" class="hover:underline">Twitter</a></li>
+              <li><a href="#" class="hover:underline">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 text-center">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript to handle modal visibility
+      document
+        .getElementById("openModalBtn")
+        .addEventListener("click", function () {
+          document.getElementById("loginModal").classList.remove("hidden");
+        });
+
+      document
+        .getElementById("closeModalBtn")
+        .addEventListener("click", function () {
+          document.getElementById("loginModal").classList.add("hidden");
+        });
+    </script>
+  </body>
+</html>
